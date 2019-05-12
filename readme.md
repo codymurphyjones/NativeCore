@@ -50,25 +50,8 @@ In order to make changes to your packages available to the other packages run
 
 
 
-If you include additional react-native libraries, they need to be added to the transpiled modules list in `next.config.js`.
+If you include additional react-native libraries, they need to be transpiled properly.
+
+In order to ensure that a module is transpile properly it must be a dependency of the website project, or a direct dependency of a dependency of the website project.
 
 
-```javascript
-
-module.exports = withTM({
-  transpileModules: ["app-interface", "my-react-native-module",'react-native-web/dist'],
-  webpack: config => {
-    // Alias all `react-native` imports to `react-native-web`
-    config.resolve.alias = {
-      ...(config.resolve.alias || {}),
-      'react-native$': 'react-native-web/dist'
-    }
-
-    return config
-
-  }
-});
-
-
-
-```
