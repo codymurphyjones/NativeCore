@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "app": "lerna run app --stream",
+    "web": "lerna run web  --stream",
+    "web:build": "lerna run web:build  --stream",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "clean:build": "lerna exec -- rimraf lib",
+    "link": "lerna link",
+    "release": "lerna publish",
+    "ls": "lerna ls",
+    "postinstall": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.4"
+  }
+}
