@@ -1,5 +1,5 @@
 {
-  "name": "@mager1794/app-interface",
+  "name": "app-interface",
   "version": "0.0.1",
   "description": "React Native driven User Experience Layout, and Data Driven components.",
   "main": "index.js",

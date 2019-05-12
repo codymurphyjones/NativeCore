@@ -1,5 +1,5 @@
 {
-  "name": "@mager1794/mobile-app",
+  "name": "mobile-app",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "app": "expo start",
@@ -11,7 +11,7 @@
     "expo": "^32.0.0",
     "react": "16.5.0",
 	"react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-	"@mager1794/app-interface":"0.0.1",
+	"app-interface":"0.0.1",
 	"@babel/runtime": "^7.4.4"
   },
   "devDependencies": {

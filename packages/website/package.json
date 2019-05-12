@@ -1,11 +1,11 @@
 {
-  "name": "@mager1794/website",
+  "name": "website",
   "scripts": {
     "web": "next",
     "web:start": "next"
   },
   "dependencies": {
-    "@mager1794/app-interface":"0.0.1",
+    "app-interface":"0.0.1",
     "babel-plugin-module-resolver": "^3.1.2",
     "next": "^8.1.0",
     "next-transpile-modules": "^2.3.1",

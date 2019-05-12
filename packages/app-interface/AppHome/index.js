@@ -1,30 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-
-export default class ReactLayouts extends React.Component{
-    render() {
-        return (
-          <View>
-                <View style={styles.toolbar}>
-                    <Text style={styles.toolbarButton}>Addd</Text>
-                    <Text style={styles.toolbarTitle}>This is the title</Text>
-                    <Text style={styles.toolbarButton}>Like</Text>
-                </View>
-				<View style={styles.content}> 
-					<Text>Test123 Test123</Text>
-				</View>
-				<View style={styles.content}> 
-					<Text>Test123 Test123</Text>
-				</View>
-				<View style={styles.content}> 
-					<Text>Test123 Test123</Text>
-				</View>
-            </View>
-        );
-    }
-}
-
 const styles = StyleSheet.create({
     toolbar:{
         backgroundColor:'#81c04d',
@@ -55,5 +31,29 @@ const styles = StyleSheet.create({
 		color: '#333',             
     }
 });
+
+export default class ReactLayouts extends React.Component{
+    render() {
+        return (
+          <View>
+                <View style={styles.toolbar}>
+                    <Text style={styles.toolbarButton}>Add</Text>
+                    <Text style={styles.toolbarTitle}>This is the title</Text>
+                    <Text style={styles.toolbarButton}>Like</Text>
+                </View>
+				<View style={styles.content}> 
+					<Text>Test123 Test123</Text>
+				</View>
+				<View style={styles.content}> 
+					<Text>Test123 Test123</Text>
+				</View>
+				<View style={styles.content}> 
+					<Text>Test123 Test123</Text>
+				</View>
+            </View>
+        );
+    }
+}
+
 
 

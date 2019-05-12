@@ -1,1 +1,1 @@
-export { default as SearchTicker } from './SearchTicker';
+export { default as AppHome } from './AppHome';

@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-import { SearchTicker } from '@mager1794/app-interface';
+import { AppHome } from 'app-interface';
 
 const styles = StyleSheet.create({
   container: {
@@ -20,6 +20,6 @@ const styles = StyleSheet.create({
   </View>
 */
 export default props => (
-	<SearchTicker />
+	<AppHome />
   
 )
