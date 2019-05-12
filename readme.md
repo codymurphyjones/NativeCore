@@ -1,6 +1,6 @@
 **What is NativeCore?**
 
-NativeCore is the system I have named the personal App development system I have been working on.  I call it native core because despite a huge focus of the system being building a web app, you built it as if it were a react-native app.
+NativeCore is the name I have given the personal App development system I have been working on.  I call it native core because despite a huge focus of the system being building a web app, you built it as if it were a react-native app.
 
 It has a react-native core.
 
@@ -52,7 +52,6 @@ In order to make changes to your packages available to the other packages run
 
 If you include additional react-native libraries, they need to be added to the transpiled modules list in `next.config.js`.
 
-ire('next-transpile-modules');
 
 ```javascript
 
