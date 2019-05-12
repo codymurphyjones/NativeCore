@@ -1,17 +1,17 @@
 const withTM = require('next-transpile-modules');
-const GetTranspile = require('./transpile.js');
+//const withTypescript = require('@zeit/next-typescript')
+const modulesToTranspile = require('./transpile.js');
 
-const modulesToTranspile = GetTranspile;
-
+    
 module.exports = withTM({
-  transpileModules: modulesToTranspile,
-  webpack: (config, options) => {
+	transpileModules: modulesToTranspile,
+	webpack: config => {
     // Alias all `react-native` imports to `react-native-web`
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
       'react-native$': 'react-native-web'
     }
-		
+	
 	config.module.rules.push({
 		test: /\.(jpe?g|png|gif|svg)$/i,
 		use: [
@@ -22,4 +22,4 @@ module.exports = withTM({
 
     return config
   }
-});
+})

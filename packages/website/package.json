@@ -2,16 +2,23 @@
   "name": "website",
   "scripts": {
     "web": "next",
-    "web:start": "next"
+    "web:start": "node server.js $PORT",
+	"web:build": "next build"
   },
   "dependencies": {
-    "app-interface":"0.0.1",
+    "@babel/preset-typescript": "^7.3.3",
+    "@zeit/next-typescript": "^1.1.1",
+    "app-interface": "0.0.1",
     "babel-plugin-module-resolver": "^3.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "img-loader": "^3.0.1",
     "next": "^8.1.0",
     "next-transpile-modules": "^2.3.1",
     "react": "^16.8.6",
     "react-art": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-native-web": "^0.11.2"
+    "react-native-web": "^0.11.2",
+    "url-loader": "^1.1.2"
   }
-}
+ }

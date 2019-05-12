@@ -1,4 +1,7 @@
 {
+  "transpile": [
+    "app-interface"
+  ],
   "noTranspile": [
     "next",
     "next-transpile-modules",
@@ -10,7 +13,11 @@
 	"react-native",
 	"@babel/runtime",
 	"img-loader",
-	"url-loader"
+	"url-loader",
+	"@babel",
+	"regenerator-runtime",
+	"lodash",
+	"hoist-non-react-statics"
   ]
 }
 

@@ -1,45 +1,30 @@
 
 const transpileDeps = [];
+const transpileNestedDeps = [];
 const noTranspile = [];
 
-
 //NoTranspileJson
-var ntpjson = require('./.notranspile.json')
+var ntpjson = require('./transpile.json')
 var packagejson = require('./package.json')
-
-Object.keys(ntpjson.noTranspile).forEach(function (item) {
-			noTranspile.push(ntpjson.noTranspile[item]);
-		
-	});
-
-
+console.log(ntpjson);
 function AddTranspile(item) {
-			if(!noTranspile.includes(item))
-					transpileDeps.push(item + "");	
+			//console.log(item);
+			if(!transpileDeps.includes(item)) {
+					transpileDeps.push(item);	
+			}
 }
-	
-Object.keys(packagejson.dependencies).forEach(function (item) {
-			AddTranspile(item);	
-		});
-		
-/*Object.keys(appjson.dependencies).forEach(function (item) {
-			if(!noTranspile.includes(item))
-					transpileDeps.push(item + "");	
-		});*/
-		//dependencies
-
-let arrayClone = transpileDeps;
-
-arrayClone.forEach((item) => {
-	let obj = require(item + '/package.json')
-	
-	Object.keys(obj.dependencies).forEach(function (item) {
-		AddTranspile(item);
-	
+console.log("NTPJson");
+Object.keys(ntpjson.transpile).forEach(function (item) {
+			AddTranspile(ntpjson.transpile[item]);	
 	});
+console.log("");
+console.log("packagejson");
+Object.keys(packagejson.dependencies).forEach(function (item) {
+	
+	if(!ntpjson.noTranspile.includes(item)) {
+		AddTranspile(item);	
+	}
 });
-
- console.log("Final Output");
- console.log("");
- console.log(transpileDeps);
- module.exports = transpileDeps;
+console.log("");
+console.log(transpileDeps);
+module.exports = transpileDeps;
