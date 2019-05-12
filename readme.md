@@ -52,7 +52,6 @@ In order to make changes to your packages available to the other packages run
 
 If you include additional react-native libraries, they need to be added to the transpiled modules list in `next.config.js`.
 
-ire('next-transpile-modules');
 
 ```javascript
 
