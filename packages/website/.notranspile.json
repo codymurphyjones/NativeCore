@@ -1,0 +1,16 @@
+{
+  "noTranspile": [
+    "next",
+    "next-transpile-modules",
+	"react-native-web",
+	"babel-plugin-module-resolver",
+	"react",
+	"react-art",
+	"react-dom",
+	"react-native",
+	"@babel/runtime",
+	"img-loader",
+	"url-loader"
+  ]
+}
+
