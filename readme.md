@@ -1,6 +1,6 @@
 **What is NativeCore?**
 
-NativeCore is the system I have named the personal App development system I have been working on.  I call it native core because despite a huge focus of the system being building a web app, you built it as if it were a react-native app.
+NativeCore is the name I have given the personal App development system I have been working on.  I call it native core because despite a huge focus of the system being building a web app, you built it as if it were a react-native app.
 
 It has a react-native core.
 
