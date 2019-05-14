@@ -33,7 +33,7 @@ To run the web app using next
 
 
 
-To run the mobile-app using [Expo, you will need to download it on your device]([https://expo.io/](https://expo.io/)
+To run the mobile-app using ([Expo, you will need to download it on your device](https://expo.io/)
 
 
 
