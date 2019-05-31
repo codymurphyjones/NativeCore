@@ -6,11 +6,12 @@
     "web": "lerna run web  --stream",
     "web:build": "lerna run web:build  --stream",
     "bootstrap": "lerna bootstrap",
-	"postbootstrap": "package_scripts copyToMobile.js",
+    "postbootstrap": "package_scripts copyToMobile.js",
     "clean": "lerna clean",
     "clean:build": "lerna exec -- rimraf lib",
     "link": "lerna link",
     "release": "lerna publish",
+	"test": "vuepress build docs",
     "ls": "lerna ls",
     "postinstall": "package_scripts dependents.js && lerna bootstrap && package_scripts copyToMobile.js"
   },
@@ -19,6 +20,7 @@
     "lerna": "^3.13.4"
   },
   "dependencies": {
-    "@mager1794/package_scripts": "0.0.12"
+    "@mager1794/package_scripts": "0.0.12",
+    "vuepress": "^0.14.11"
   }
 }
