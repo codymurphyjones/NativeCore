@@ -12,13 +12,15 @@
     "test": "vuepress build docs",
     "ls": "lerna ls",
     "postinstall": "npm run bootstrap",
-	"prebootstrap": "package_scripts dependents.js",
+    "prebootstrap": "package_scripts dependents.js",
     "bootstrap": "lerna bootstrap",
     "postbootstrap": "package_scripts copyToMobile.js",
-	"postinstalltest": "package_scripts dependents.js && lerna bootstrap && package_scripts copyToMobile.js"
+    "postinstalltest": "package_scripts dependents.js && lerna bootstrap && package_scripts copyToMobile.js",
+	"doctest": "node test.js"
   },
   "devDependencies": {
     "copy-dir": "^1.0.0",
+    "jsdoc-to-markdown": "^5.0.0",
     "lerna": "^3.13.4"
   },
   "dependencies": {
