@@ -38,4 +38,5 @@ console.log("New Build: " + buildNumber);
 
 
 let data = JSON.stringify(packagejson, null, 4);
+console.log(data);
 fs.writeFileSync('../package.json', data);
