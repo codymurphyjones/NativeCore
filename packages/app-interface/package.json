@@ -1,13 +1,13 @@
 {
- "private": true,
+  "private": true,
   "name": "app-interface",
   "version": "0.0.1",
   "description": "React Native driven User Experience Layout, and Data Driven components.",
   "main": "index.js",
   "dependencies": {
+    "@babel/runtime": "^7.4.4",
     "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-	"@babel/runtime": "^7.4.4"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
