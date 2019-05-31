@@ -1,7 +1,7 @@
 {
     "name": "root",
     "version": "0.0.2",
-    "build": "190531-b0",
+    "build": "190531-b1",
     "private": true,
     "scripts": {
         "app": "lerna run app --stream",
@@ -13,8 +13,8 @@
         "clean": "lerna clean",
         "preclean": "lerna exec -- rimraf packages",
         "link": "lerna link",
-		"commit": "git commit -m ",
-		"precommit": "package_scripts buildnum.js && git add .",
+        "commit": "git commit -m ",
+        "precommit": "package_scripts buildnum.js && git add .",
         "release": "lerna version",
         "postelease": "lerna publish",
         "ls": "lerna ls",
