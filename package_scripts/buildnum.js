@@ -4,7 +4,7 @@ const { generate, validate, parse, format } = require('build-number-generator')
 
 let packagejson = fs.readFileSync('../package.json');
 packagejson = JSON.parse(packagejson);
-
+console.log("test");
 var build = 0;
 let bkgBuild = packagejson.build;
 try {
