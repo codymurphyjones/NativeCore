@@ -1,4 +1,5 @@
 {
+ "private": true,
   "name": "website",
   "scripts": {
     "web": "next",
