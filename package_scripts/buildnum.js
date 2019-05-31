@@ -33,7 +33,7 @@ const buildNumber = buildDate + "-b" + build;
 
 
 packagejson.build = buildNumber;
-
+console.log(packagejson);
 console.log("New Build: " + buildNumber);
 
 
