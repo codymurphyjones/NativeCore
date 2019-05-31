@@ -5,14 +5,16 @@
     "app": "lerna run app --stream",
     "web": "lerna run web  --stream",
     "web:build": "lerna run web:build  --stream",
+    "prebootstrap": "package_scripts dependents.js",
     "bootstrap": "lerna bootstrap",
-	"postbootstrap": "package_scripts copyToMobile.js",
+    "postbootstrap": "package_scripts copyToMobile.js",
     "clean": "lerna clean",
-    "clean:build": "lerna exec -- rimraf lib",
+    "preclean": "lerna exec -- rimraf packages",
     "link": "lerna link",
-    "release": "lerna publish",
+	"release": "lerna version -m ",
+    "postrelease": "lerna publish",
     "ls": "lerna ls",
-    "postinstall": "package_scripts dependents.js && lerna bootstrap && package_scripts copyToMobile.js"
+    "postinstall": "npm run bootstrap"
   },
   "devDependencies": {
     "copy-dir": "^1.0.0",

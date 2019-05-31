@@ -1,4 +1,5 @@
 {
+ "private": true,
   "name": "app-interface",
   "version": "0.0.1",
   "description": "React Native driven User Experience Layout, and Data Driven components.",
