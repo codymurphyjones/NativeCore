@@ -19,7 +19,9 @@
         "postelease": "lerna publish",
         "ls": "lerna ls",
         "postinstall": "npm run bootstrap",
+		"predocs": "package_scripts jsdoc.js",
 		"docs": "vuepress dev documentation",
+		"predocs:build": "package_scripts jsdoc.js",
 		"docs:build": "vuepress build documentation"
     },
     "devDependencies": {

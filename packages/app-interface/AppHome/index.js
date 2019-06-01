@@ -1,3 +1,8 @@
+/**
+ * AppHome module
+ * @module AppHome
+*/
+   
    /**
      * Repeat <tt>str</tt> several times.
      * @param {string} str The string to repeat.
