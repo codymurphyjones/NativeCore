@@ -1,5 +1,3 @@
 ---
 sidebar: true
 ---
-
-# Mobile App

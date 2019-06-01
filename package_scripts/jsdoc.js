@@ -11,8 +11,6 @@ const getDirectories = source =>
 
 
 let dir = path.resolve("../packages/");
-//console.log(jsdoc2md.renderSync({ files: '../packages/app-interface/*.js' }));
-//console.log(jsdoc2md.renderSync({ files: '../package_scripts/*.js' }));
   console.log("Generating Documentation...");
   
   
@@ -45,10 +43,9 @@ getDirectories(dir).forEach((obj) => {
 	});
 });
 
-console.log();
 
 
-fs.writeFileSync('../documentation/sidebar.js', sidebar(collection));
+fs.writeFileSync('../documentation/docs/sidebar.js', sidebar(collection));
 
 
 

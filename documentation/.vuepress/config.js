@@ -1,8 +1,8 @@
-const sidebar = require("../sidebar.js");
+const sidebar = require("../docs/sidebar.js");
 console.log(sidebar);
 module.exports = {
-  title: 'Hello VuePress',
-  description: 'Just playing around',
+  title: 'NativeCore Documentation',
+  description: 'Generated Documentation for NativeCore',
    themeConfig: {
 	displayAllHeaders: true,
     sidebar: sidebar
