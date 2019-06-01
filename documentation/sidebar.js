@@ -1,0 +1,1 @@
+module.exports = [['guide.md', 'Guide'],"/docs/app-interface","/docs/mobile-app","/docs/website"];

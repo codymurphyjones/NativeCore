@@ -8,6 +8,7 @@ packagejson = JSON.parse(packagejson);
 
 var build = 0;
 let bkgBuild = packagejson.build;
+
 try {
 	console.log(build);
 	if(!bkgBuild.includes("-b")) {
@@ -33,11 +34,9 @@ const buildNumber = buildDate + "-b" + build;
 
 
 packagejson.build = buildNumber;
-console.log(packagejson);
 console.log("New Build: " + buildNumber);
 
 
 let data = JSON.stringify(packagejson, null, 4);
-console.log(data);
 fs.writeFileSync('./package.json', data);
-console.log("finished");
+

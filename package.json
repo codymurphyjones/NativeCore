@@ -18,7 +18,9 @@
         "release": "lerna version",
         "postelease": "lerna publish",
         "ls": "lerna ls",
-        "postinstall": "npm run bootstrap"
+        "postinstall": "npm run bootstrap",
+		"docs": "vuepress dev documentation",
+		"docs:build": "vuepress build documentation"
     },
     "devDependencies": {
         "copy-dir": "^1.0.0",
@@ -26,6 +28,8 @@
     },
     "dependencies": {
         "@mager1794/package_scripts": "0.0.12",
-        "build-number-generator": "0.0.4"
+        "build-number-generator": "0.0.4",
+        "jsdoc-to-markdown": "^5.0.0",
+        "vuepress": "^0.14.11"
     }
 }
