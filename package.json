@@ -4,6 +4,7 @@
     "build": "190531-b0",
     "private": true,
     "scripts": {
+		"pretty": "prettier --check \"packages/**/*.js\" --write",
         "app": "lerna run app --stream",
         "web": "lerna run web  --stream",
         "web:build": "lerna run web:build  --stream",
@@ -12,17 +13,17 @@
         "postbootstrap": "package_scripts copyToMobile.js",
         "clean": "lerna clean",
         "preclean": "lerna exec -- rimraf packages",
+		"postclean": "npm run pretty",
         "link": "lerna link",
-        "commit": "git commit -m ",
-        "precommit": "package_scripts buildnum.js && git add .",
+		"precommit": "npm run pretty && package_scripts buildnum.js && git add .",
+        "commit": "git commit",
         "release": "lerna version",
         "postelease": "lerna publish",
-        "ls": "lerna ls",
         "postinstall": "npm run bootstrap",
-		"predocs": "package_scripts jsdoc.js",
-		"docs": "vuepress dev documentation",
+        "predocs": "package_scripts jsdoc.js",
 		"predocs:build": "package_scripts jsdoc.js",
-		"docs:build": "vuepress build documentation"
+        "docs": "vuepress dev documentation",
+        "docs:build": "vuepress build documentation"
     },
     "devDependencies": {
         "copy-dir": "^1.0.0",
@@ -32,6 +33,7 @@
         "@mager1794/package_scripts": "0.0.12",
         "build-number-generator": "0.0.4",
         "jsdoc-to-markdown": "^5.0.0",
+        "prettier": "^1.17.1",
         "vuepress": "^0.14.11"
     }
 }
