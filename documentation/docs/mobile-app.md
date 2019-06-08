@@ -1,10 +1,7 @@
----
-sidebar: true
----
+<a name="module_Mobile App"></a>
+
+## Mobile App
+Mobile App
 
 
- <a name="module_App"></a>
-
-## App
-App module
 

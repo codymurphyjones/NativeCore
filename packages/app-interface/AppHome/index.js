@@ -1,17 +1,7 @@
-/**
- * AppHome module
- * @module AppHome
- */
-
-/**
- * Repeat <tt>str</tt> several times.
- * @param {string} str The string to repeat.
- * @param {number} [times=1] How many times to repeat the string.
- * @returns {string}
- */
 
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+
 
 const styles = StyleSheet.create({
   toolbar: {
@@ -44,6 +34,15 @@ const styles = StyleSheet.create({
   }
 });
 
+/**
+ * App Interface 
+ * @module AppHome
+*/
+
+/**
+ * Export AppHome
+ * @returns {Component}
+ */
 export default class ReactLayouts extends React.Component {
   render() {
     return (

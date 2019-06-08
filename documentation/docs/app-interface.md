@@ -1,11 +1,18 @@
----
-sidebar: true
----
+<a name="module_App Interface"></a>
+
+## App Interface
+App Interface
 
 
- <a name="test"></a>
+<a name="module_AppHome"></a>
 
-## test() ⇒ <code>Component</code>
-Export AppHome <tt>str</tt>
+## AppHome
+App Interface
 
-**Kind**: global function  
+<a name="exp_module_AppHome--module.exports"></a>
+
+### module.exports ⏏
+Export AppHome
+
+**Kind**: Exported class  
+

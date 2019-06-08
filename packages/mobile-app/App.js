@@ -1,14 +1,8 @@
 /**
- * App module
- * @module App
+ * Mobile App 
+ * @module Mobile App
  */
 
-/**
- * Repeat <tt>str</tt> several times.
- * @param {string} str The string to repeat.
- * @param {number} [times=1] How many times to repeat the string.
- * @returns {string}
- */
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 

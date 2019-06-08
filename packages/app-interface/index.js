@@ -1,17 +1,17 @@
 /**
  * @fileOverview AppInterface Implementation
- * @author <a href="mailto:jd@example.com">John Doe</a>
- * @version 3.1.2
+ * @author Cody Jones
+ * @version 0.0.0
  */
+ 
+/**
+ * App Interface 
+ * @module App Interface
+*/
 
 /**
- * Export AppHome <tt>str</tt>
+ * Export AppHome
  * @returns {Component}
  */
 export { default as AppHome } from "./AppHome";
 
-/**
- * Export AppHome <tt>str</tt>
- * @returns {Component}
- */
-function test(value) {}
