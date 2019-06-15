@@ -7,17 +7,22 @@
         "app": "expo start",
         "android": "expo start --android",
         "ios": "expo start --ios",
-        "eject": "expo eject"
+        "eject": "expo eject",
+        "load": "npm install"
     },
     "dependencies": {
-        "expo": "^32.0.0",
+        "expo": "^33.0.0",
         "react": "16.5.0",
-        "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-        "app-interface": "0.0.1",
+        "react-native": "https://github.com/expo/react-native.git",
         "@babel/runtime": "^7.4.4",
-        "react-native-elements": "^1.1.0"
+        "react-native-elements": "^1.1.0",
+        "react-native-vector-icons": "^6.5.0",
+        "app-interface": "0.0.1"
     },
     "devDependencies": {
-        "babel-preset-expo": "^5.0.0"
+        "@types/expo": "^32.0.13",
+        "@types/react-native": "^0.57.63",
+        "babel-preset-expo": "^5.0.0",
+        "typescript": "^3.5.2"
     }
 }

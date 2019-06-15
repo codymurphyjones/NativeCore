@@ -10,7 +10,7 @@
             "web:build": "lerna run web:build  --stream",
             "prebootstrap": "package_scripts dependents.js",
             "bootstrap": "lerna bootstrap",
-            "postbootstrap": "package_scripts copyToMobile.js",
+            "postbootstrap": "package_scripts copyToMobile.js && lerna run load && package_scripts confirm.js",
             "clean": "lerna clean",
             "preclean": "lerna exec -- rimraf packages",
             "postclean": "npm run pretty",
@@ -22,6 +22,7 @@
             "postinstall": "npm run bootstrap",
             "predocs": "package_scripts jsdoc.js",
             "predocs:build": "package_scripts jsdoc.js",
+            "preapp": "package_scripts copyToMobile.js",
             "docs": "vuepress dev documentation",
             "docs:build": "vuepress build documentation",
             "docs:server": "vuepress dev documentation"

@@ -7,12 +7,9 @@ let app_fs = fs.readFileSync(path.resolve('./packages/mobile-app/package.json'))
 let ui = JSON.parse(ui_fs);
 let app = JSON.parse(app_fs);
 
-delete app.dependencies["app-interface"];
 
 let uiDep = Object.keys(ui.dependencies);
 let appDep = Object.keys(app.dependencies);
-
-
 
 
 //console.log(uiDep);
@@ -20,11 +17,13 @@ let appDep = Object.keys(app.dependencies);
 uiDep.forEach((value) => {
     let inApp = appDep.includes(value);
 	
-    if (!inApp && value != "app-interface") {
+    if (!inApp) {
 		//Add missing dependencies
         app.dependencies[value] = ui.dependencies[value];
     }
 });
+
+app.dependencies["app-interface"] = "0.0.1";
 
 
 let data = JSON.stringify(app, null, 4);
