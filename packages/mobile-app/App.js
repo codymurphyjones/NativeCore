@@ -1,5 +1,5 @@
 /**
- * Mobile App 
+ * Mobile App
  * @module Mobile App
  */
 

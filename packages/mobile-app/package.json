@@ -1,7 +1,7 @@
 {
     "private": true,
     "name": "mobile-app",
-	"version": "0.0.1",
+    "version": "0.0.1",
     "main": "node_modules/expo/AppEntry.js",
     "scripts": {
         "app": "expo start",
@@ -14,7 +14,8 @@
         "react": "16.5.0",
         "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
         "app-interface": "0.0.1",
-        "@babel/runtime": "^7.4.4"
+        "@babel/runtime": "^7.4.4",
+        "react-native-elements": "^1.1.0"
     },
     "devDependencies": {
         "babel-preset-expo": "^5.0.0"

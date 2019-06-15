@@ -1,7 +1,7 @@
+import React, { userState } from "react";
+import { StyleSheet, Text, View, ScrollView, Dimensions } from "react-native";
 
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-
+import { PricingCard } from "react-native-elements";
 
 const styles = StyleSheet.create({
   toolbar: {
@@ -29,38 +29,63 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f00",
     color: "#333"
   }
 });
 
-/**
- * App Interface 
- * @module AppHome
-*/
+/*
+function AppHome(props) {
+	
+	return <Examples />;
+}*/
 
-/**
- * Export AppHome
- * @returns {Component}
- */
-export default class ReactLayouts extends React.Component {
+export default class AppHome extends React.Component {
   render() {
+    var { height, width } = Dimensions.get("window");
     return (
       <View>
         <View style={styles.toolbar}>
-          <Text style={styles.toolbarButton}> Add </Text>{" "}
-          <Text style={styles.toolbarTitle}> This is the title </Text>{" "}
-          <Text style={styles.toolbarButton}> Like </Text>{" "}
-        </View>{" "}
-        <View style={styles.content}>
-          <Text> Test123 Test123 </Text>{" "}
-        </View>{" "}
-        <View style={styles.content}>
-          <Text> Test123 Test123 </Text>{" "}
-        </View>{" "}
-        <View style={styles.content}>
-          <Text> Test123 Test123 </Text>{" "}
-        </View>{" "}
+          <Text style={styles.toolbarButton}>Add</Text>
+          <Text style={styles.toolbarTitle}>
+            TickerShare Alpha Build v0.0.1
+          </Text>
+          <Text style={styles.toolbarButton}>Like</Text>
+        </View>
+        <ScrollView style={{ height: height }}>
+          <View style={styles.content}>
+            <Text>Test123 Test123</Text>
+          </View>
+          <View style={styles.content}>
+            <Text>Test123 Test123</Text>
+          </View>
+          <View style={styles.content}>
+            <Text>Test123 Test123</Text>
+          </View>
+
+          <PricingCard
+            color="#4f9deb"
+            title="Free"
+            price="$0"
+            info={["1 User", "Basic Support", "All Core Features"]}
+            button={{ title: "GET STARTED", icon: "flight-takeoff" }}
+          />
+
+          <PricingCard
+            color="#4f9deb"
+            title="Free"
+            price="$0"
+            info={["1 User", "Basic Support", "All Core Features"]}
+            button={{ title: "GET STARTED", icon: "flight-takeoff" }}
+          />
+
+          <PricingCard
+            color="#4f9deb"
+            title="Free"
+            price="$25"
+            info={["1 User", "Basic Support", "All Core Features"]}
+            button={{ title: "GET STARTED", icon: "flight-takeoff" }}
+          />
+        </ScrollView>
       </View>
     );
   }
